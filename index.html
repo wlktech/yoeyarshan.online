@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Static UI</title>
+    <link rel="stylesheet" href="asset/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  </head>
+  <body>
+
+    <div class="container-fluid  fixed-top">
+      <div class="row">
+          <div class="col-lg-5 mx-auto">
+              <div id="fixed-header" class="d-none d-flex justify-content-between align-items-center py-2 mt-3" style="background-color: #f9b17a;opacity: 0.8;border-radius: 30px;">
+              <img style="border-radius: 50%" src="./asset/img/logo.jpg" width="50px" height="50px" class="ms-1" alt=""/>
+              <a href=""><i class="fa-solid fa-share-nodes me-3" style="font-size: 30px;color: #fff"></i></a>
+            </div>
+          </div>
+      
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 mx-auto">
+          <div class="d-flex justify-content-center mt-5">
+            <img style="border-radius: 50%" src="./asset/img/logo.jpg" width="100px" height="100px" alt=""/>
+            <a href=""><i class="fa-solid fa-share-nodes text-white" style="font-size: 25px"></i></a>
+          </div>
+          <p class="text-white text-center" style="font-size: 20px">
+          နာမည်ပျက်လုံးဝ လုံးဝမရှိ အလျော်/အစား အမှန်ကန်တဲ့ ရိုးရာရှမ်း အမ်နိုင်းရှမ်းကိုးမီး
+မြန်မာနိုင်ငံရဲ့ အကောင်းဆုံး ရှမ်းကိုးမီး
+          </p>
+
+          
+
+          <div class="accordion mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                  style="background: #676f9d"
+                >
+                  <a href=""><i class="fa-brands fa-viber"></i></a>
+                  <a href=""
+                    ><p class="ms-3 text-white">Viber မှ အကောင့်ဖွင့်ကစားရန်</p></a
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="d-flex align-items-center">
+                      Viber Contact    09678057797
+                    </p>
+                    <img
+                      class="rounded"
+                      src="./asset/img/logo.jpg"
+                      width="100px"
+                      height="100px"
+                      alt=""
+                    />
+                  </div>
+                  <hr />
+                  <!-- <button class="btn viber-btn">
+                    Viber Customer Service သို့ ဆက်သွယ်ရန်
+                  </button> -->
+                  <a href="viber://chat?number=+959678057797" class="btn viber-btn"
+                    >Viber Customer Service သို့ ဆက်သွယ်ရန်</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="d-grid place-items-center"> -->
+            <a href="https://t.me/yoeyarshanM9" target="_blank" class="btn custom-btn mt-3 d-flex justify-content-center self-align-center" style="background: #0088cc; color: white"><i class="fa-brands fa-telegram" style="font-size: 25px;margin-right: 5px;"></i>telegram မှအကောင့်ဖွင့် ကစားရန်</a>
+          <!-- </div> -->
+          <a href="https://www.facebook.com/profile.php?id=61553074174659" target="_blank" class="btn custom-btn mt-2" style="background: #0088cc; color: white;"><i class="fa-brands fa-facebook-f" style="font-size: 15px;"></i> facebook မှအကောင့်ဖွင့် ကစားရန်</i></a>
+          <a href="" class="btn text-btn mt-3 fw-bold">
+            <marquee direction="left">မန်ဘာသစ် ၁၀၀ % နေ့စဉ်ဘောနပ် ၂၀ % မိတ်ဆက် ၁၀% ရုံးကြေး ၅%</marquee>
+          </a>
+          <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="true">
+            <div class="carousel-indicators" style="margin-bottom: -25px;" >
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" style="width: 10px; height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/ee5577409a4b4483b689e690e79073b8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/59d0864d75204ac9b5a76b19b4072469.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/6a9cc15308714309885825566c21b347.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/3f540342e5dd4f58a69f04429de06ffd.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/7a3931ccb41a4e688794bb7e2d9e034d.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div id="carouselExampleIndicators_2" class="carousel slide mt-5" data-bs-ride="true">
+            <div class="carousel-indicators" style="margin-bottom: -25px;" >
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" style="width: 10px; height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" style="width: 10px; height: 10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/ee5577409a4b4483b689e690e79073b8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/59d0864d75204ac9b5a76b19b4072469.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/6a9cc15308714309885825566c21b347.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/3f540342e5dd4f58a69f04429de06ffd.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/7a3931ccb41a4e688794bb7e2d9e034d.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+           <a href="" class="btn text-btn mt-5 text-dark fw-bold">
+            <marquee direction="left">၁၀၀% အလျော်အစားမှန်တဲ့ ဂိမ်းဆိုဒ်၏ ငွေထုတ်ပြေစာများ</marquee>
+          </a>
+
+          <div class="row mt-3">
+            <div id="recipeCarousel" class="carousel multi-img slide" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/bf1998dc114b46b59ac6ea29775bc98d.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/f881a127f9004c60964df48accb93e6d.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/5c06a5ba93604d1cbb56b0e08c132d02.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/4a3c6d9f6c2b47c681d279d4cfe41861.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/4d057e2728c4494ca205a4e17d12f951.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=600/https://cdn-b.heylink.me/media/sliders/images/063cf2d816eb40b38a0c597e5c610a6a.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+          <div>
+            
+  
+              <div class="mt-3 btns">
+                <a href="http://m9skm.com/w/signin/index.html?agentId=10000007">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div  class="d-flex justify-content-center align-items-center">
+                        <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=96/https://cdn-b.heylink.me/media/links/thumbnails/f0e982f563e3404e8add7d8ca16cdea6.jpg"  alt="" class="rounded">
+                        <span class="ms-3">M9 ရှမ်းကိုးမီး ဒေါင်းရန် </span>
+                      </div>
+                      <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </a>
+              </div>
+  
+              <div class="mt-3 btns">
+                <a href="http://m9skm.com/w/signin/index.html?agentId=10000007">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=96/https://cdn-b.heylink.me/media/links/thumbnails/f9f02af1ab5d486a9d9a24556dfd720f.jpg"  alt="" class="rounded">
+                        <span class="ms-3">M9 ရှမ်းကိုးမီး ဒေါင်းရန် </span>
+                      </div>
+                      <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </a>
+              </div>
+
+          
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center my-3" style="padding-bottom: 100px;">
+          <img src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=300/https://cdn-b.heylink.me/media/users/logos/3bf709e0e7a54e1d9c8cbc3aeffafe26.jpg" alt="" style="width: 40%; height: 30%;">
+        </div>
+
+        </div>
+      </div>   
+      <!-- <footer class="container-fluid shadow">
+       <div class="row">
+        <div class="col-lg-5 mx-auto rounded bg-light pt-4 pb-3 ">
+          <div class="d-flex justify-content-around">
+            <div class="text-center">
+              <a href="index.html" class="text-decoration-none footer-nav">
+                <i class="fas fa-house-chimney d-block footer-icon"></i>
+                <span class="d-block footer-text">ပင်မ</span>
+              </a>
+            </div>
+            <div class="text-center">
+              <a href="wallet.html" class="text-decoration-none footer-nav">
+                <i class="fas fa-wallet d-block footer-icon"></i>
+                <span class="d-block footer-text">ပိုက်ဆံအိတ်</span>
+              </a>
+            </div>
+            <div class="text-center">
+              <a href="promotion.html" class="text-decoration-none footer-nav">
+                <i class="fas fa-gift d-block text-secondary footer-icon"></i>
+                <span class="d-block footer-text">ပရိုမိုရှင်း</span>
+              </a>
+            </div>
+            <div class="text-center">
+              <a href="service.html" class="text-decoration-none footer-nav">
+                <i class="fas fa-phone d-block footer-icon"></i>
+                <span class="d-block footer-text">ဝန်ဆောင်မှုဖုန်း</span>
+              </a>
+            </div>
+            <div class="text-center">
+              <a href="./dashboard.html" class="text-decoration-none footer-nav">
+                <i class="fas fa-user d-block footer-icon"></i>
+                <span class="d-block footer-text">ကျွန်ုပ်</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>    -->
+    </div>
+
+   
+
+    
+
+  
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+          $(window).scroll(function(){
+		var getscrolltt = $(this).scrollTop();
+		// console.log(getscrolltt);
+
+    if(getscrolltt >= 195){
+			$('#fixed-header').addClass('fixed-header');
+      $('#fixed-header').removeClass('d-none');
+		}else{
+      $('#fixed-header').addClass('d-none');
+			$('#fixed-header').removeClass('fixed-header');
+		}
+  });
+    </script>
+
+     <script>
+      let items = document.querySelectorAll('.multi-img .carousel-item');
+
+      items.forEach((el) => {
+        const minPerSlide = 3;
+        let next = el.nextElementSibling;
+        for (var i = 1; i < minPerSlide; i++) {
+          if (!next) {
+            // wrap carousel by using first child
+            next = items[0];
+          }
+          let cloneChild = next.cloneNode(true);
+          el.appendChild(cloneChild.children[0]);
+          next = next.nextElementSibling;
+        }
+      });
+    </script>
+
+   
+
+  </body>
+</html>
